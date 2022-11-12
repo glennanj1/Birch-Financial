@@ -10,12 +10,11 @@ export default function Index() {
   return (
     <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Birch Financial 
-        </Typography>
+        <Typography variant="h2" component="h1" gutterBottom>
         <Link href="/about" color="secondary">
           Lets Branch Out Together
         </Link>
+        </Typography>
         <ProTip />
         <Copyright />
       </Box>
