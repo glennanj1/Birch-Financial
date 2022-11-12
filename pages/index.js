@@ -11,10 +11,10 @@ export default function Index() {
     <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          Next.js example
+          Birch Financial 
         </Typography>
         <Link href="/about" color="secondary">
-          Go to the about page
+          Lets Branch Out Together
         </Link>
         <ProTip />
         <Copyright />
