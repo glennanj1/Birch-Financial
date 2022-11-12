@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import Image from 'next/image'
 
 
 const pages = ['Rates', 'Pricing', 'Testimonials'];
@@ -40,7 +41,15 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} > 
+            <Image
+                src="/../public/tree.png"
+                alt="Picture of the author"
+                width={50}
+                height={50}
+            />
+          </Box>
           <Typography
             variant="h6"
             noWrap
@@ -53,6 +62,7 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
+              paddingLeft: 2,
             }}
           >
             Birch Financial
@@ -97,7 +107,14 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <Box sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} > 
+            <Image
+                src="/../public/tree.png"
+                alt="Picture of the author"
+                width={25}
+                height={25}
+            />
+          </Box>
           <Typography
             variant="h5"
             noWrap
@@ -107,9 +124,8 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
-              fontFamily: 'rubik',
               fontWeight: 400,
-              letterSpacing: '.3rem',
+              letterSpacing: '.1rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
