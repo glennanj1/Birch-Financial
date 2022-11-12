@@ -18,6 +18,15 @@ export default function MyApp(props) {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta property="og:title" content="Birch Financial" key="title" />
+        <meta name="title" content="Birch Financial" />
+        <meta name="description" content="Lets Branch Out Together" />
+        <meta name="keywords" content="finance, mortgage, loan" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="4 days" />
+        <meta name="author" content="John Glennan" />
       </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
