@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Image from 'next/image'
+import tree from '../public/tree.png'
 
 
 const pages = ['Rates', 'Pricing', 'Testimonials'];
@@ -44,7 +45,7 @@ function ResponsiveAppBar() {
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} > 
             <Image
-                src="/../public/tree.png"
+                src={tree}
                 alt="Picture of the author"
                 width={50}
                 height={50}
@@ -109,7 +110,7 @@ function ResponsiveAppBar() {
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} > 
             <Image
-                src="/../public/tree.png"
+                src={tree}
                 alt="Picture of the author"
                 width={25}
                 height={25}
